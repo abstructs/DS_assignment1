@@ -16,7 +16,18 @@ public class TestTiming {
     }
 
     public static String testMickey(int n) {
-        return "";
+        Stopwatch timer;
+        Timing t;
+        t = new Timing();
+        int[] arr = t.randomarr(n);
+        timer = new Stopwatch();
+        //initialize arguments
+        timer.start();
+        t.mickey(arr);
+        //code to be timed
+        timer.stop();
+//        return Double.parseDouble(timer.toString());
+        return timer.toString();
     }
 
     public static String testMinnie(int n) {
@@ -60,6 +71,10 @@ public class TestTiming {
 
         for(int i = 30; i <= 44; i++) {
             System.out.println(testDonald(i));
+        }
+
+        for(int i = 1000; i <= 8192000; i *= 2) {
+            System.out.println(testMickey(i));
         }
     }
 }
