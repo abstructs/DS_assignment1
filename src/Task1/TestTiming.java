@@ -15,6 +15,30 @@ public class TestTiming {
         return timer.toString();
     }
 
+    public static String testMickey(int n) {
+        return "";
+    }
+
+    public static String testMinnie(int n) {
+        return "";
+    }
+
+    public static String testGoofy(int n) {
+        return "";
+    }
+
+    public static String testPluto(int n) {
+        return "";
+    }
+
+    public static String testGyro(int n) {
+        return "";
+    }
+
+    public static String testFact(int n) {
+        return "";
+    }
+
     public static String testDonald(int n) {
         Stopwatch timer;
         Timing t;
