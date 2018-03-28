@@ -3,13 +3,11 @@ package task1;
 public class TestTiming {
     public static String testDaffy(int n) {
         Stopwatch timer;
-        Timing t;
         timer = new Stopwatch();
         //initialize arguments
         timer.start();
-        t = new Timing();
         //code to be timed
-        t.daffy(n);
+        Timing.daffy(n);
         timer.stop();
 //        return Double.parseDouble(timer.toString());
         return timer.toString();
@@ -17,13 +15,11 @@ public class TestTiming {
 
     public static String testMickey(int n) {
         Stopwatch timer;
-        Timing t;
-        t = new Timing();
-        int[] arr = t.randomarr(n);
+        int[] arr = Timing.randomarr(n);
         timer = new Stopwatch();
         //initialize arguments
         timer.start();
-        t.mickey(arr);
+        Timing.mickey(arr);
         //code to be timed
         timer.stop();
 //        return Double.parseDouble(timer.toString());
@@ -31,19 +27,57 @@ public class TestTiming {
     }
 
     public static String testMinnie(int n) {
-        return "";
+        Stopwatch timer;
+        int[] arr = Timing.randomarr(n);
+        timer = new Stopwatch();
+        //initialize arguments
+        timer.start();
+        Timing.minnie(arr);
+        //code to be timed
+        timer.stop();
+//        return Double.parseDouble(timer.toString());
+        return timer.toString();
     }
 
     public static String testGoofy(int n) {
-        return "";
+        Stopwatch timer;
+        int[] arr = Timing.randomarr(n);
+        timer = new Stopwatch();
+        //initialize arguments
+        timer.start();
+        Timing.goofy(arr);
+        //code to be timed
+        timer.stop();
+//        return Double.parseDouble(timer.toString());
+        return timer.toString();
     }
 
     public static String testPluto(int n) {
-        return "";
+        Stopwatch timer;
+        int[] arr = Timing.randomarr(n);
+        timer = new Stopwatch();
+        //initialize arguments
+        timer.start();
+        Timing.pluto(arr);
+        //code to be timed
+        timer.stop();
+//        return Double.parseDouble(timer.toString());
+        return timer.toString();
     }
 
     public static String testGyro(int n) {
-        return "";
+        Stopwatch timer;
+        int[] arr = Timing.randomarr(n);
+        timer = new Stopwatch();
+        //initialize arguments
+        Timing.pluto(arr);
+
+        timer.start();
+        Timing.gyro(arr);
+        //code to be timed
+        timer.stop();
+//        return Double.parseDouble(timer.toString());
+        return timer.toString();
     }
 
     public static String testFact(int n) {
@@ -52,13 +86,11 @@ public class TestTiming {
 
     public static String testDonald(int n) {
         Stopwatch timer;
-        Timing t;
         timer = new Stopwatch();
         //initialize arguments
         timer.start();
-        t = new Timing();
         //code to be timed
-        t.donald(n);
+        Timing.donald(n);
         timer.stop();
 //        return Double.parseDouble(timer.toString());
         return timer.toString();
@@ -75,6 +107,22 @@ public class TestTiming {
 
         for(int i = 1000; i <= 8192000; i *= 2) {
             System.out.println(testMickey(i));
+        }
+
+        for(int i = 1000; i <= 256000; i *= 2) {
+            System.out.println(testMinnie(i));
+        }
+
+        for(int i = 1000; i <= 256000; i *= 2) {
+            System.out.println(testGoofy(i));
+        }
+
+        for(int i = 1000; i <= 256000; i *= 2) {
+            System.out.println(testPluto(i));
+        }
+
+        for(int i = 1000; i <= 256000; i *= 2) {
+            System.out.println(testGyro(i));
         }
     }
 }
