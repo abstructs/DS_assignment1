@@ -19,17 +19,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="TestTiming.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Task1/TestTiming.java">
+        <entry file="file://$PROJECT_DIR$/src/task1/TestTiming.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-31">
-              <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="322">
+              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Stopwatch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Task1/Stopwatch.java">
+        <entry file="file://$PROJECT_DIR$/src/task1/Stopwatch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
@@ -39,7 +39,7 @@
         </entry>
       </file>
       <file leaf-file-name="Timing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Task1/Timing.java">
+        <entry file="file://$PROJECT_DIR$/src/task1/Timing.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
@@ -80,11 +80,12 @@
         <option value="$PROJECT_DIR$/src/TestTiming.java" />
         <option value="$PROJECT_DIR$/src/Task1/Timing.java" />
         <option value="$PROJECT_DIR$/src/Task1/TestTiming.java" />
+        <option value="$PROJECT_DIR$/src/task1/TestTiming.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="438" />
+    <option name="x" value="90" />
     <option name="y" value="87" />
     <option name="width" value="1440" />
     <option name="height" value="813" />
@@ -120,7 +121,7 @@
               <item name="DS_Assignment1" type="b2602c69:ProjectViewProjectNode" />
               <item name="DS_Assignment1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Task1" type="462c0819:PsiDirectoryNode" />
+              <item name="task1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -169,11 +170,11 @@
     <configuration name="TestTiming" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Task1.*" />
+          <option name="PATTERN" value="task1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Task1.TestTiming" />
+      <option name="MAIN_CLASS_NAME" value="task1.TestTiming" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -230,7 +231,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="438" y="87" width="1440" height="813" extended-state="0" />
+    <frame x="90" y="87" width="1440" height="813" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -274,7 +275,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task1/Stopwatch.java">
+    <entry file="file://$PROJECT_DIR$/src/task1/Stopwatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
@@ -282,7 +283,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task1/Timing.java">
+    <entry file="file://$PROJECT_DIR$/src/task1/Timing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
@@ -294,10 +295,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task1/TestTiming.java">
+    <entry file="file://$PROJECT_DIR$/src/task1/TestTiming.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="322">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding />
         </state>
       </provider>

@@ -1,7 +1,7 @@
-package Task1;
+package task1;
 
 public class TestTiming {
-    public static Double testDaffy(int n) {
+    public static String testDaffy(int n) {
         Stopwatch timer;
         Timing t;
         timer = new Stopwatch();
@@ -11,10 +11,11 @@ public class TestTiming {
         //code to be timed
         t.daffy(n);
         timer.stop();
-        return Double.parseDouble(timer.toString());
+//        return Double.parseDouble(timer.toString());
+        return timer.toString();
     }
 
-    public static Double testDonald(int n) {
+    public static String testDonald(int n) {
         Stopwatch timer;
         Timing t;
         timer = new Stopwatch();
@@ -24,16 +25,17 @@ public class TestTiming {
         //code to be timed
         t.donald(n);
         timer.stop();
-        return Double.parseDouble(timer.toString());
+//        return Double.parseDouble(timer.toString());
+        return timer.toString();
     }
 
     public static void main(String args[]) {
         for(int i = 30; i <= 44; i++) {
-            System.out.println(testDaffy(i).toString());
+            System.out.println(testDaffy(i));
         }
 
         for(int i = 30; i <= 44; i++) {
-            System.out.println(testDonald(i).toString());
+            System.out.println(testDonald(i));
         }
     }
 }

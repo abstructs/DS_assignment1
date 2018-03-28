@@ -1,4 +1,4 @@
-package Task1;
+package task1;
 
 import java.util.Random;
 import java.math.BigInteger;

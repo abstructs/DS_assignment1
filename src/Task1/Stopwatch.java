@@ -1,4 +1,4 @@
-package Task1;
+package task1;
 
 /**
  A class to measure time elapsed.
