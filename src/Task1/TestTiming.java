@@ -94,7 +94,6 @@ public class TestTiming {
         timer.stop();
         //return Double.parseDouble(timer.toString());
         return timer.toString();
-        return "";
     }
 
     public static String testDonald(int n) {

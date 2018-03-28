@@ -21,12 +21,9 @@
       <file leaf-file-name="TestTiming.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/task1/TestTiming.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-887">
-              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-              <folding>
-                <element signature="e#2308#2309#0" expanded="true" />
-                <element signature="e#2333#2334#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="296">
+              <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -347,12 +344,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/task1/TestTiming.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-887">
-          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-          <folding>
-            <element signature="e#2308#2309#0" expanded="true" />
-            <element signature="e#2333#2334#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="296">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
