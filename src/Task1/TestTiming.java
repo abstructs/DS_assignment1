@@ -1,5 +1,7 @@
 package task1;
 
+import java.math.BigInteger;
+
 public class TestTiming {
     public static String testDaffy(int n) {
         Stopwatch timer;
@@ -124,5 +126,12 @@ public class TestTiming {
         for(int i = 1000; i <= 256000; i *= 2) {
             System.out.println(testGyro(i));
         }
+        
+        for(int i = 1000; i <= 64000; i *= 2) {
+            BigInteger bign = BigInteger.valueOf((int) i);
+        	System.out.println(testFact(bign.intValue()));
+        }
+        
+        
     }
 }
