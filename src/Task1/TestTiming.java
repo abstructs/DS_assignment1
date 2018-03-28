@@ -90,7 +90,7 @@ public class TestTiming {
         //initialize arguments
         timer.start();
         //code to be timed
-        Timing.fact(bign.intValue());
+        Timing.fact(bign);
         timer.stop();
         //return Double.parseDouble(timer.toString());
         return timer.toString();
