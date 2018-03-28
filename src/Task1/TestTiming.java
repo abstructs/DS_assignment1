@@ -83,6 +83,17 @@ public class TestTiming {
     }
 
     public static String testFact(int n) {
+    	
+    	Stopwatch timer;
+        timer = new Stopwatch();
+        BigInteger bign = BigInteger.valueOf((int) n);
+        //initialize arguments
+        timer.start();
+        //code to be timed
+        Timing.fact(bign.intValue());
+        timer.stop();
+        //return Double.parseDouble(timer.toString());
+        return timer.toString();
         return "";
     }
 
@@ -128,8 +139,7 @@ public class TestTiming {
         }
         
         for(int i = 1000; i <= 64000; i *= 2) {
-            BigInteger bign = BigInteger.valueOf((int) i);
-        	System.out.println(testFact(bign.intValue()));
+        	System.out.println(testFact(i));
         }
         
         
