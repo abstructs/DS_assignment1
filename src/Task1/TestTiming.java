@@ -131,7 +131,5 @@ public class TestTiming {
             BigInteger bign = BigInteger.valueOf((int) i);
         	System.out.println(testFact(bign.intValue()));
         }
-        
-        
     }
 }
