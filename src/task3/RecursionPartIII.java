@@ -16,15 +16,30 @@ public class RecursionPartIII {
          ***
     */
     public static void pattern(int x, int y) {
-        return;
+    	
+		String a = "";
+	
+		for (int i = x; i > 0; i--) {
+		    a += "*";
+		}
+		
+		System.out.println(a);
+	
+		if (x == y) {
+		    System.out.println(a);
+		    return;
+		}
+		pattern(x + 1, y);
+		System.out.println(a);
+        
     }
 
     // Precondition: none
     // Postcondition: This method outputs a string (title) followed by numbers
     // of the form 1.1, 1.2, 1.3 etc... The levels input parameter, determines how // many levels the section numbers have. To clarify, an input of levels equal // to 2, would have section number of the form x.y. Likewise, if levels is
-    // equal to 3, would have section number of the form x.y.z. Please note the // digits permitted in each level are only 1 – 9.
+    // equal to 3, would have section number of the form x.y.z. Please note the // digits permitted in each level are only 1 â€“ 9.
     /* Example output:
-       level(“TITLE”, 2) will output:
+       level(â€œTITLEâ€�, 2) will output:
        TITLE1.1.
        TITLE1.2.
        TITLE1.3.
@@ -38,6 +53,6 @@ public class RecursionPartIII {
     }
 
     public static void main(String[] args) {
-
+    	pattern(3,5);
     }
 }
