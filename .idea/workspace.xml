@@ -28,24 +28,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedSequence.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LinkedSequence.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/task2/LinkedSequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="69" column="17" lean-forward="false" selection-start-line="69" selection-start-column="17" selection-end-line="71" selection-end-column="6" />
+            <state relative-caret-position="-353">
+              <caret line="105" column="9" lean-forward="true" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
               <folding>
-                <element signature="e#1396#1397#0" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
+                <element signature="e#3342#3343#0" expanded="true" />
+                <element signature="e#3371#3372#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecursionPartIII.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RecursionPartIII.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/task3/RecursionPartIII.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+            <state relative-caret-position="173">
+              <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -107,8 +107,8 @@
         <option value="$PROJECT_DIR$/src/Task1/Timing.java" />
         <option value="$PROJECT_DIR$/src/Task1/TestTiming.java" />
         <option value="$PROJECT_DIR$/src/task1/TestTiming.java" />
-        <option value="$PROJECT_DIR$/src/task2/LinkedSequence.java" />
         <option value="$PROJECT_DIR$/src/task3/RecursionPartIII.java" />
+        <option value="$PROJECT_DIR$/src/task2/LinkedSequence.java" />
       </list>
     </option>
   </component>
@@ -378,8 +378,8 @@
         <state relative-caret-position="414">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#1396#1397#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#3342#3343#0" expanded="true" />
+            <element signature="e#3371#3372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -415,22 +415,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/task2/LinkedSequence.java">
+    <entry file="file://$PROJECT_DIR$/src/task3/RecursionPartIII.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="69" column="17" lean-forward="false" selection-start-line="69" selection-start-column="17" selection-end-line="71" selection-end-column="6" />
-          <folding>
-            <element signature="e#1396#1397#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="173">
+          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/task3/RecursionPartIII.java">
+    <entry file="file://$PROJECT_DIR$/src/task2/LinkedSequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="-353">
+          <caret line="105" column="9" lean-forward="true" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+          <folding>
+            <element signature="e#3342#3343#0" expanded="true" />
+            <element signature="e#3371#3372#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
