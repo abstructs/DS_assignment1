@@ -4,10 +4,14 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
 	
 	private T value;
 	private LinkedSequence<T> next;
-	private int size =0;
+	private int size;
+
+	public LinkedSequence() {
+        this.size = 0;
+    }
 
     // Add a new element to this sequence, after the current element.
-    void addAfter(T element) {
+    public void addAfter(T element) {
     	
     	LinkedSequence<T> node = new LinkedSequence<T>();
     	node.value = element; //create the node and add the element
@@ -21,7 +25,7 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     //Place the contents of another sequence 
     //at the end of this sequence.
     
-    void addAll(LinkedSequence<T> seq) throws java.lang.NullPointerException {
+    public void addAll(LinkedSequence<T> seq) throws java.lang.NullPointerException {
     	
     	if(seq == null) {
     		throw new java.lang.NullPointerException("the sequence provided is null ");
@@ -38,7 +42,7 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     // Add a new element to this sequence, 
     //before the current element.
     
-    void addBefore(T element) {
+    public void addBefore(T element) {
     	
     	LinkedSequence<T> node = new LinkedSequence<T>();
   
@@ -53,7 +57,7 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     //Move forward, so that the current element 
     //is now the next element in this sequence.
     
-    void advance() throws java.lang.IllegalStateException{
+    public void advance() throws java.lang.IllegalStateException{
     	
     	if(!isCurrent()) {
     		throw new java.lang.IllegalStateException("there is no current element, so advance may not be called");
@@ -69,7 +73,7 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     }
 
     // Create a new sequence that contains all the elements from one sequence followed by another.
-    LinkedSequence<T> concatenaton(LinkedSequence<T> s1, LinkedSequence<T> s2)
+    public LinkedSequence<T> concatenaton(LinkedSequence<T> s1, LinkedSequence<T> s2)
     {
     	LinkedSequence<T> newnode = new LinkedSequence<T>();
     	
@@ -88,7 +92,7 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
 
     // Accessory method to get the current element of this sequence.
     
-    T getCurrent() throws java.lang.IllegalStateException {
+    public T getCurrent() throws java.lang.IllegalStateException {
     	
     	if(!isCurrent()) {
     		throw new java.lang.IllegalStateException("there is no current element, so advance may not be called");
@@ -99,7 +103,7 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
 
     /* Accessory method to determine whether this sequence has a specified current element that can be retrieved with
        the getCurrent method. */
-    boolean isCurrent() { //2
+    public boolean isCurrent() { //2
     	
 //    	if (getCurrent()== null) {
 //    		return false;
@@ -109,7 +113,7 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     }
 
     // Remove the current element from this sequence.
-    void removeCurrent() throws java.lang.IllegalStateException{
+    public void removeCurrent() throws java.lang.IllegalStateException{
     	
     	if(!isCurrent()) {
     		throw new java.lang.IllegalStateException("there is no current element, so advance may not be called");
@@ -119,13 +123,13 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     }
 
     // Determine the number of elements in this sequence.
-    int size() {
+    public int size() {
     	return this.size;
     }
 
     // Set the current element at the front of this sequence.
     
-    void start() { //1
+    public void start() { //1
     	
     	while(this.next != null) {
     		

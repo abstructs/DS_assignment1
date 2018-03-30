@@ -61,6 +61,6 @@ public class RecursionPartIII {
 
     public static void main(String[] args) {
 //    	pattern(3,5);
-        level("TITLE", 3);
+        level("TITLE", 5);
     }
 }
