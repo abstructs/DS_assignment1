@@ -31,13 +31,15 @@
       <file leaf-file-name="LinkedSequence.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/task2/LinkedSequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="111" column="5" lean-forward="true" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
+            <state relative-caret-position="256">
+              <caret line="105" column="27" lean-forward="false" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
               <folding>
                 <element signature="e#202#203#0" expanded="true" />
                 <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#3489#3490#0" expanded="true" />
-                <element signature="e#3518#3519#0" expanded="true" />
+                <element signature="e#2954#2955#0" expanded="true" />
+                <element signature="e#2999#3000#0" expanded="true" />
+                <element signature="e#3392#3393#0" expanded="true" />
+                <element signature="e#3421#3422#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -402,8 +404,10 @@
           <folding>
             <element signature="e#202#203#0" expanded="true" />
             <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#3489#3490#0" expanded="true" />
-            <element signature="e#3518#3519#0" expanded="true" />
+            <element signature="e#2954#2955#0" expanded="true" />
+            <element signature="e#2999#3000#0" expanded="true" />
+            <element signature="e#3392#3393#0" expanded="true" />
+            <element signature="e#3421#3422#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -455,13 +459,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/task2/LinkedSequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="111" column="5" lean-forward="true" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
+        <state relative-caret-position="256">
+          <caret line="105" column="27" lean-forward="false" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
           <folding>
             <element signature="e#202#203#0" expanded="true" />
             <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#3489#3490#0" expanded="true" />
-            <element signature="e#3518#3519#0" expanded="true" />
+            <element signature="e#2954#2955#0" expanded="true" />
+            <element signature="e#2999#3000#0" expanded="true" />
+            <element signature="e#3392#3393#0" expanded="true" />
+            <element signature="e#3421#3422#0" expanded="true" />
           </folding>
         </state>
       </provider>
