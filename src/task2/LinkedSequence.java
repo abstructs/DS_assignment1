@@ -56,20 +56,20 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     }
 
     // Generate a copy of this sequence.
-    T clone() {
-    	LinkedSequence<T> nodeclone = new LinkedSequence<T>();
-    	while(this.next !=null) {
-    		nodeclone.addAfter(this.value);
-    		next = next.next;
-    	}
-    	
-    	return nodeclone;
-    };
+//    T clone() {
+//    	LinkedSequence<T> nodeclone = new LinkedSequence<T>();
+//    	while(this.next !=null) {
+//    		nodeclone.addAfter(this.value);
+//    		next = next.next;
+//    	}
+//
+//    	return nodeclone;
+//    };
 
     // Create a new sequence that contains all the elements from one sequence followed by another.
-    LinkedSequence<T> concatenaton(LinkedSequence<T> s1, LinkedSequence<T> s2){
-    	
-    }
+//    LinkedSequence<T> concatenaton(LinkedSequence<T> s1, LinkedSequence<T> s2){
+//
+//    }
 
     // Accessor method to get the current element of this sequence.
     T getCurrent() {
