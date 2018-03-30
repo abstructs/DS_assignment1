@@ -58,7 +58,6 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     //is now the next element in this sequence.
     
     public void advance() throws java.lang.IllegalStateException{
-    	
     	if(!isCurrent()) {
     		throw new java.lang.IllegalStateException("there is no current element, so advance may not be called");
     	}
@@ -104,12 +103,12 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     /* Accessory method to determine whether this sequence has a specified current element that can be retrieved with
        the getCurrent method. */
     public boolean isCurrent() { //2
-    	
-//    	if (getCurrent()== null) {
-//    		return false;
-//    	}
-    	
-    	return false;
+    	try {
+    	    getCurrent();
+    	    return true;
+        } catch(IllegalStateException e) {
+    	    return false;
+        }
     }
 
     // Remove the current element from this sequence.
