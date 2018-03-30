@@ -103,12 +103,7 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     /* Accessory method to determine whether this sequence has a specified current element that can be retrieved with
        the getCurrent method. */
     public boolean isCurrent() { //2
-    	try {
-    	    getCurrent();
-    	    return true;
-        } catch(IllegalStateException e) {
-    	    return false;
-        }
+        return this.value != null;
     }
 
     // Remove the current element from this sequence.
