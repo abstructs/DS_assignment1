@@ -1,12 +1,39 @@
 package task2;
 
-public interface LinkedSequence<T> {
+public class LinkedSequence<T> extends java.lang.Object implements java.lang.Cloneable{
+	
+	private T value;
+	private LinkedSequence<T> next;
+	private int size =0;
 
     // Add a new element to this sequence, after the current element.
-    void addAfter(T element);
+    void addAfter(T element) {
+    	
+    	LinkedSequence<T> node = new LinkedSequence<T>();
+    	node.value = element; //create the node and add the element
+    	node.next = this.next;
+    	this.next = node; //here is where we add after the current element.
+  
+    	size+=1; 
+    }
 
     //Place the contents of another sequence at the end of this sequence.
-    void addAll(LinkedSequence<T> seq);
+    void addAll(LinkedSequence<T> seq) {
+    	
+    	if(seq.size == 0) {
+    		return;
+    	}
+    	
+    	while(seq.next != null) {
+    		
+    		this.addAfter(seq.next.value);
+    		
+    		seq = seq.next;
+    		//break;
+    		//this.next.next = next.next;
+    	}
+    	
+    }
 
     // Add a new element to this sequence, before the current element.
     void addBefore(T element);
@@ -35,4 +62,15 @@ public interface LinkedSequence<T> {
 
     // Set the current element at the front of this sequence.
     void start();
+    
+    public String toString() {
+		LinkedSequence<T> a = next;
+		String s = "[";
+		while (a != null) {
+			s = s + a.value.toString() + " ";
+			a = a.next;
+		}
+		return s + "]";
+	}
+
 }
