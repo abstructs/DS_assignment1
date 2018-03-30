@@ -1,19 +1,21 @@
 package task2;
 
+import sun.awt.image.ImageWatched;
+
 public class LinkedSequence<T> extends java.lang.Object implements java.lang.Cloneable{
 	
 	private T value;
 	private LinkedSequence<T> next;
 	private int size = 0;
 
-    // Add a new element to this sequence, after the current element.
+    // Add a new element to this sequence, before the current element.
     public void addBefore(T element) {
-    	LinkedSequence<T> node = new LinkedSequence<T>();
-    	node.value = element;
-    	node.next = this;
-
-    	size+=1; 
-    	
+    	LinkedSequence<T> temp = this.next;
+        LinkedSequence<T> nodeToAdd = new LinkedSequence<T>();
+        nodeToAdd.value = element;
+        nodeToAdd.next = temp;
+        this.next = nodeToAdd;
+        size+=1;
     }
 
     //Place the contents of another sequence 
@@ -37,15 +39,15 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     //before the current element.
     
     public void addAfter(T element) {
-    	LinkedSequence<T> node = new LinkedSequence<T>();
+    	LinkedSequence<T> nodeToAdd = new LinkedSequence<T>();
     	LinkedSequence<T> temp = this;
-    	node.value = element;
+        nodeToAdd.value = element;
 
     	while(temp.next != null) {
     	    temp = temp.next;
         }
 
-        temp.next = node;
+        temp.next = nodeToAdd;
     	size+=1; 
     }
 
