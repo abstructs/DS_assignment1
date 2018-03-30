@@ -89,11 +89,11 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
        the getCurrent method. */
     boolean isCurrent() {
     	
-    	if (getCurrent()== null) {
-    		return false;
-    	}
+//    	if (getCurrent()== null) {
+//    		return false;
+//    	}
     	
-    	return true;
+    	return false;
     }
 
     // Remove the current element from this sequence.
