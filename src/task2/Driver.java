@@ -19,6 +19,7 @@ public class Driver {
 		//L.addAll(L2);
 		L.addBefore("3.5");
 		
+		L.start();
 		
 		System.out.println("Original List L: " + L.getCurrent());
 	}

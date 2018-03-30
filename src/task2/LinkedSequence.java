@@ -51,11 +51,11 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
 
     // Move forward, so that the current element 
     //is now the next element in this sequence.
-    void advance() {
-    	this.value = this.next.value;
-    }
-
-    // Generate a copy of this sequence.
+//    void advance() throws {
+//    	this.value = this.next.value;
+//    }
+//
+//     //Generate a copy of this sequence.
 //    T clone() {
 //    	
 //    }
@@ -75,6 +75,7 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     /* Accessory method to determine whether this sequence has a specified current element that can be retrieved with
        the getCurrent method. */
     boolean isCurrent() {
+    	
     	if (getCurrent()== null) {
     		return false;
     	}
@@ -85,7 +86,8 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     // Remove the current element from this sequence.
     void removeCurrent() {
     	
-    };
+    	this.value = null;
+    }
 
     // Determine the number of elements in this sequence.
     int size() {
@@ -95,7 +97,13 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     // Set the current element at the front of this sequence.
     void start() {
     	
-    };
+    	while(this.next.next != null) {
+    		
+    		this.next.next = this.next; 
+    		
+    		
+    	}
+    }
     
     public String toString() {
 		LinkedSequence<T> a = next;
