@@ -21,10 +21,11 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     //Place the contents of another sequence 
     //at the end of this sequence.
     
-    void addAll(LinkedSequence<T> seq) {
+    void addAll(LinkedSequence<T> seq) throws java.lang.NullPointerException {
     	
-    	if(seq.size == 0) {
-    		return;
+    	if(seq == null) {
+    		throw new java.lang.NullPointerException("the sequence provided is null ");
+
     	}
     	
     	while(seq.next != null) {
@@ -49,16 +50,23 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     	size+=1; 
     }
 
-    // Move forward, so that the current element 
+    //Move forward, so that the current element 
     //is now the next element in this sequence.
-//    void advance() throws {
-//    	this.value = this.next.value;
-//    }
-//
-//     //Generate a copy of this sequence.
-//    T clone() {
-//    	
-//    }
+    
+    void advance() throws java.lang.IllegalStateException{
+    	
+    	if(!isCurrent()) {
+    		throw new java.lang.IllegalStateException("there is no current element, so advance may not be called");
+    	}
+    	this.value = this.next.value;
+    }
+
+     //Generate a copy of this sequence.
+    public T clone() {
+    	
+    	T a = null;
+    	return a;
+    }
 
 //    // Create a new sequence that contains all the elements from one sequence followed by another.
 //    LinkedSequence<T> concatenaton(LinkedSequence<T> s1, LinkedSequence<T> s2)
@@ -68,7 +76,12 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
 
     // Accessory method to get the current element of this sequence.
     
-    T getCurrent() {
+    T getCurrent() throws java.lang.IllegalStateException {
+    	
+    	if(!isCurrent()) {
+    		throw new java.lang.IllegalStateException("there is no current element, so advance may not be called");
+    	}
+    	
     	return this.value;
     }
 
@@ -84,7 +97,11 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     }
 
     // Remove the current element from this sequence.
-    void removeCurrent() {
+    void removeCurrent() throws java.lang.IllegalStateException{
+    	
+    	if(!isCurrent()) {
+    		throw new java.lang.IllegalStateException("there is no current element, so advance may not be called");
+    	}
     	
     	this.value = null;
     }
@@ -97,11 +114,11 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     // Set the current element at the front of this sequence.
     void start() {
     	
-    	while(this.next.next != null) {
+    	while(this.next != null) {
     		
+    		System.out.println(this.next);
+    		System.out.println(this.next.next);
     		this.next.next = this.next; 
-    		
-    		
     	}
     }
     
