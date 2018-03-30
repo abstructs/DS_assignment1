@@ -4,11 +4,11 @@ public class Driver {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		LinkedSequence<String> L = new LinkedSequence<String>();
-		System.out.println("Original List L: " + L.getCurrent());
-		L.addAfter("2");
-		L.addAfter("3");
-		L.addAfter("4");
+		LinkedSequence<String> L1 = new LinkedSequence<String>();
+//		System.out.println("Original List L: " + L.getCurrent());
+		L1.addAfter("2");
+		L1.addAfter("3");
+		L1.addAfter("4");
 
 		LinkedSequence<String> L2 = new LinkedSequence<String>();
 
@@ -16,12 +16,13 @@ public class Driver {
 		L2.addAfter("6");
 		L2.addAfter("7");
 
-		//L.addAll(L2);
-		L.addBefore("3.5");
-
-		L.start();
+//		L.start();
 		
-		System.out.println("Original List L: " + L.getCurrent());
+		System.out.println("Original List L1: " + L1.toString());
+        System.out.println("Original List L2: " + L2.toString());
+
+        System.out.println(LinkedSequence.concatenation(L1, L2));
+
 	}
 
 }

@@ -4,20 +4,14 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
 	
 	private T value;
 	private LinkedSequence<T> next;
-	private int size;
-
-	public LinkedSequence() {
-        this.size = 0;
-    }
+	private int size = 0;
 
     // Add a new element to this sequence, after the current element.
-    public void addAfter(T element) {
-    	
+    public void addBefore(T element) {
     	LinkedSequence<T> node = new LinkedSequence<T>();
-    	node.value = element; //create the node and add the element
-    	node.next = this.next;
-    	this.next = node; //here is where we add after the current element.
-    	this.value = node.value;// also take the value 
+    	node.value = element;
+    	node.next = this;
+
     	size+=1; 
     	
     }
@@ -42,15 +36,16 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     // Add a new element to this sequence, 
     //before the current element.
     
-    public void addBefore(T element) {
-    	
+    public void addAfter(T element) {
     	LinkedSequence<T> node = new LinkedSequence<T>();
-  
-    	node.value = this.value; //create the node and add the element
-    	
-    	this.next.value = element;
-    	
-    	this.addAfter(node.value); //here is where we add after the current element.
+    	LinkedSequence<T> temp = this;
+    	node.value = element;
+
+    	while(temp.next != null) {
+    	    temp = temp.next;
+        }
+
+        temp.next = node;
     	size+=1; 
     }
 
@@ -72,21 +67,17 @@ public class LinkedSequence<T> extends java.lang.Object implements java.lang.Clo
     }
 
     // Create a new sequence that contains all the elements from one sequence followed by another.
-    public LinkedSequence<T> concatenaton(LinkedSequence<T> s1, LinkedSequence<T> s2)
-    {
-    	LinkedSequence<T> newnode = new LinkedSequence<T>();
+    public static LinkedSequence concatenation(LinkedSequence s1, LinkedSequence s2) {
+    	LinkedSequence temp = s1;
     	
-    	while (s1.next != null) //add all from s1 to node
+    	while (temp.next != null) //add all from s1 to node
     	{
-    		newnode.addAfter(s1.value);
-    		s1.next = s1.next.next;
+    		temp = temp.next;
 		}
+
+		temp.next = s2.next;
     	
-    	//transverse to the end of the nodelist 
-    	
-    	//add all of the s2 to the node
-    	
-    	return newnode; // return node
+    	return s1;
     }
 
     // Accessory method to get the current element of this sequence.
